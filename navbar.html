@@ -1,0 +1,86 @@
+<!-- navbar.html 
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+            <img src="./images/Drapes And Fitouts.jpeg" alt="Drapes and Fitouts">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="ms-3 phone-number">📞 +971 580 9365</div>
+        </div>
+    </div>
+</nav>
+-->
+
+<!-- navbar.html -->
+<!-- navbar.html -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+            <img src="./images/Drapes And Fitouts.jpeg" alt="Drapes and Fitouts">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <!-- Phone Number -->
+            <div class="ms-3">
+                <a class="nav-link" href="tel:+971585809365" style="
+                    font-weight: bold; 
+                    color: #FFD700; 
+                    background-color: #333; 
+                    padding: 5px 10px; 
+                    border-radius: 5px; 
+                    text-decoration: none;
+                ">📞 +971 58 580 9365</a>
+            </div>
+            <!-- WhatsApp Link -->
+            <div class="ms-3">
+                <a href="https://wa.me/971585809365" target="_blank" style="
+                    display: inline-flex; 
+                    align-items: center; 
+                    padding: 5px 10px; 
+                    background-color: #25D366; 
+                    color: white; 
+                    border-radius: 5px; 
+                    text-decoration: none; 
+                    font-weight: bold;
+                ">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 18px; height: 18px; margin-right: 5px;">
+                    Message on WhatsApp
+                </a>
+            </div>
+            <!-- Request a Quote Button -->
+            <div class="ms-3">
+                <button class="btn btn-primary animate-quote-button" data-bs-toggle="modal" data-bs-target="#dimensionQuestionModal">Request a Quote</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add the script here -->
+    <script>
+        // Highlight active menu item
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === currentPage) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+</nav>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Drapes and Fitouts Trading FZE</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #fdf6e3;
+            color: #3b2f2f;
+        }
+        .card {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .card-title {
+            color: #b8860b;
+            font-size: 1.5rem;
+        }
+        .btn-primary {
+            background-color: #b8860b;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #cfa21d;
+        }
+        footer {
+            background-color: #b8860b;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./images/Drapes And Fiouts.jpeg" alt="Drapes and Fitouts">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <!-- Phone Number -->
+                <div class="ms-3">
+                    <a class="nav-link" href="tel:+971585809365" style="
+                        font-weight: bold; 
+                        color: #FFD700; 
+                        background-color: #333; 
+                        padding: 5px 10px; 
+                        border-radius: 5px; 
+                        text-decoration: none;
+                    ">📞 +971 58 580 9365</a>
+                </div>
+                <!-- WhatsApp Link -->
+                <div class="ms-3">
+                    <a href="https://wa.me/971585809365" target="_blank" style="
+                        display: inline-flex; 
+                        align-items: center; 
+                        padding: 5px 10px; 
+                        background-color: #25D366; 
+                        color: white; 
+                        border-radius: 5px; 
+                        text-decoration: none; 
+                        font-weight: bold;
+                    ">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 18px; height: 18px; margin-right: 5px;">
+                        Message on WhatsApp
+                    </a>
+                </div>
+                <!-- Request a Quote Button -->
+                <div class="ms-3">
+                    <button class="btn btn-primary animate-quote-button" data-bs-toggle="modal" data-bs-target="#dimensionQuestionModal">Request a Quote</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="container my-5">
+        <div class="row">
+            <!-- Contact Form -->
+            <div class="col-md-6 mb-4">
+                <div class="card p-4">
+                    <h2 class="card-title">Get In Touch</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Contact Details and Map -->
+            <div class="col-md-6 mb-4">
+                <div class="card p-4">
+                    <h2 class="card-title">Contact Details</h2>
+                    <p><strong>Address:</strong> Drapes and Fitouts Trading FZE, Dubai, UAE</p>
+                    <p><strong>Phone:</strong> +971 580 9365</p>
+                    <p><strong>Email:</strong> <a href="mailto:david@drapesandfitouttrading.com">david@drapesandfitouttrading.com</a></p>
+                    <div class="mt-3">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.133733632186!2d55.27078201500338!3d25.204849283879623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f4340b90e6d73%3A0xe7a0cf741da8af5d!2sDubai%2C%20United%20Arab%20Emirates!5e0!3m2!1sen!2s!4v1614156063568!5m2!1sen!2s"
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Drapes and Fitouts Trading FZE. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
